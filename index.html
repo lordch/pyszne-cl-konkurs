@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UEFA Champions League Contest</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="assets/images/composite_logo.svg"
+          alt="UEFA Champions League"
+          class="header-logo"
+        />
+        <div class="title-container">
+          <div class="header-subtitle">
+            Pobierz ofertę w programie pyszne punkty, weź udział w konkursie.
+          </div>
+          <div class="title">
+            Wygraj Bilet Na Mecz 1/8 Finału Ligi Mistrzów UEFA
+          </div>
+        </div>
+        <img
+          src="assets/images/hamburger.png"
+          alt="Hamburger"
+          class="hamburger-image"
+        />
+      </div>
+    </header>
+    <div class="prizes-section">
+      <div class="header-secondary">Nagrody</div>
+      <div class="prizes-container">
+        <div class="prize">
+          <img
+            src="assets/images/trophy.svg"
+            alt="1st Prize"
+            class="prize-icon"
+          />
+          <div class="prize-header">Miejsca 1-3</div>
+          <div class="prize-content">
+            Podwójne wejściówki na wybrany mecz 1/8 finału Ligi Mistrzów UEFA
+            oraz 2000 zł na pokrycie podróży
+          </div>
+        </div>
+        <div class="prize">
+          <img
+            src="assets/images/voucher.svg"
+            alt="4th-10th Prize"
+            class="prize-icon"
+          />
+          <div class="prize-header">Miejsca 4-10</div>
+          <div class="prize-content">
+            Vouchery o wartości 50 zł do wykorzystania na Pyszne.pl
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps-section">
+      <div class="header-secondary">Jak wziąć udział?</div>
+      <div class="steps-container">
+        <div class="step">
+          <span class="step-number">01</span>
+          <div>
+            Pobierz ofertę w programie lojalnościowym PysznePunkty na stronie
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div>
+            Uzupełnij formularz i odpowiedz na proste pytanie konkursowe
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div>Wygraj i obejrzyj mecz na żywo!</div>
+        </div>
+      </div>
+      <p>Czas trwania konkursu: 01.12.2023 - 31.01.2024 r.</p>
+    </div>
+    <div class="form-section">
+      <form
+        name="contest-entry"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <!-- Form fields and submission button -->
+        <input type="hidden" name="form-name" value="contest-entry" />
+        <div class="form-fields">
+          <div class="form-field">
+            <label for="name">Imię i Nazwisko</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="phone">Nr Telefonu</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="code">Kod Otrzymany z Pyszne Punkty</label>
+            <input type="text" id="code" name="code" required />
+          </div>
+          <div class="form-field">
+            <label for="answer">Odpowiedz na Pytanie</label>
+            <input
+              class="textarea"
+              type="textarea"
+              id="answer"
+              name="answer"
+              required
+            />
+          </div>
+          <div class="form-field-checkbox">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent"
+              >Akceptuję regulamin, zgoda na przetwarzanie danych
+              osobowych.</label
+            >
+          </div>
+          <button type="submit">Zgłoś się</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
