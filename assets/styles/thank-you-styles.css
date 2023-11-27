@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #FF8000;
+    --background-dark: #222;
+    --background-light: #F5F2EB;
+    --font-family-jet: 'JET Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-jet);
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.thank-you-title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: -1.28px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.thank-you-text {
+    font-size: 20px;
+    margin-bottom: 64px;
+}
+
+.thank-you-back {
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 64px;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+
+/* @media (max-width: 768px) {
+    .title {
+        font-size: var(--font-size-xlarge);
+    }
+} */
